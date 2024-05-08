@@ -8,7 +8,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import {DataTableDemo} from '@/components/table';
 import InputIndex from '@/components/input';
 
-export function SkeletonCard() {
+const SkeletonCard = () => {
   return (
     <div className="flex flex-col space-y-3 mb-10">
       <Skeleton className="h-[125px] w-[400px] rounded-xl" />
