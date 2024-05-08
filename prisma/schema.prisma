@@ -1,0 +1,18 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Todo {
+  id Int @id @default(autoincrement()) // 主键 自增id
+  name String // 任务名
+  time String // 执行时间
+  created DateTime @default(now()) // 记录默认创建时间
+}
