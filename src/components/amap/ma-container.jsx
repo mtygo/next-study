@@ -4,7 +4,7 @@ import "./map-container.css";
 import AMapLoader from "@amap/amap-jsapi-loader";
 
 const MapContainer = () => {
-  let map: { destroy: () => void; } | null = null;
+  let map = null;
 
   useEffect(() => {
     window._AMapSecurityConfig = {
