@@ -1,13 +1,13 @@
 'use client';
-import { useEffect } from "react";
-import styles from "./map-container.css";
+import React, { useEffect } from "react";
+import "./map-container.css";
 import AMapLoader from "@amap/amap-jsapi-loader";
 
-export default function MapContainer() {
+const MapContainer = () => {
   let map = null;
 
   useEffect(() => {
-    global._AMapSecurityConfig = {
+    window._AMapSecurityConfig = {
       securityJsCode: "a611eefef68f805370bb0a9e06ed7110",
     };
     AMapLoader.load({
@@ -35,8 +35,9 @@ export default function MapContainer() {
   return (
     <div
       id="container"
-      className={styles.container}
+      className='container'
       style={{ height: "800px" }}
     ></div>
   );
 }
+export default  MapContainer;
