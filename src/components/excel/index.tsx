@@ -28,7 +28,7 @@ const Excel = (props: any) => {
     theme: defaultTheme,
   });
 
-  const data: IWorkbookData = {
+  const data = {
     id: 'xxxla',
     name: '测试',
   };
