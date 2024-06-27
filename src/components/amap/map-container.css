@@ -1,5 +1,12 @@
 .container{
-    padding: 0px;
+    padding: 20px;
     margin: 0px;
     width: 100%;
   }
+
+#input_id {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 300px;
+}
