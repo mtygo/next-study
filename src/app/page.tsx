@@ -1,6 +1,5 @@
 
 import React from 'react';
-import MapContainer from '../components/amap';
 import dynamic from 'next/dynamic';
 
 export default function Home() {

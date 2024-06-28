@@ -4,9 +4,11 @@
     width: 100%;
   }
 
-#input_id {
+.input-selcet {
   position: absolute;
   top: 0;
   right: 20px;
   width: 300px;
+  display: flex;
+  align-items: center;
 }

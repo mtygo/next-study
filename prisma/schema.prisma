@@ -6,13 +6,12 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
-model Todo {
+model User {
   id Int @id @default(autoincrement()) // 主键 自增id
   name String // 任务名
-  time String // 执行时间
-  created DateTime @default(now()) // 记录默认创建时间
+  age Int // 年龄
 }
